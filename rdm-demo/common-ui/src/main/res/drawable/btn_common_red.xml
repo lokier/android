@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+
+        <shape >
+            <!-- 内部颜色 -->
+            <solid
+                android:color="#aaf33436"/>
+            <!-- 圆角的幅度 -->
+            <corners
+                android:radius="1dip" />
+        </shape>
+    </item>
+    <item >
+        <shape >
+            <!-- 内部颜色 -->
+            <solid
+                android:color="#FFf33436" />
+            <!-- 圆角的幅度 -->
+            <corners
+                android:radius="1dip" />
+        </shape>
+
+    </item>
+
+
+
+</selector>

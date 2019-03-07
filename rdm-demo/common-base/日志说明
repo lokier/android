@@ -1,0 +1,3 @@
+EntityManager： DB数据查看
+Protocol：      协议发送情况查看
+NetworkBroadcastReceiver：  网络状态变化查看

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is actonte\ndsfjksjdf\ntthis.content\nwwww"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hide footer and header"
+        android:id="@+id/btn_show_hide" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content view overlap footer"
+        android:id="@+id/chk_overlap_footer" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content view overlap header"
+        android:id="@+id/chk_overlap_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/LargerTextSize"
+        android:text="close network to test popup navigation bar notify."/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:text="1.this is footer text\nthis is footer text\n2.this is footer text\n3.this is footer text\n4.this is footer text\n5.this is footer text\n6.this is footer text\n"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="gridview" />
+    <item type="id" name="webview" />
+    <item type="id" name="scrollview" />
+
+    <item type="id" name="viewpager" />
+
+    <item type="id" name="imageButton_imageview_id" />
+    <item type="id" name="nav_title_bar" />
+    <item type="id" name="layout_status_bar_id_for_system" />
+
+
+
+</resources>

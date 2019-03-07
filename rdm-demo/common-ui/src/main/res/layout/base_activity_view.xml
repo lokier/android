@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_root_view"
+    style="@style/base_activity_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/base_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/base_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/base_view_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+    </FrameLayout>
+
+    <!--
+        <include android:id="@+id/layout_invalid_network_notify"
+        layout="@layout/include_invalid_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/base_view_header"
+        />-->
+</merge>
