@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:name="com.rdm.common.ui.demo.DemoApp"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
@@ -372,18 +373,47 @@
             android:label="@string/title_activity_rounded_image_view_demo" >
         </activity>
 
-
         <activity
-            android:name="com.rdm.anim.SnowDownActvity"
+            android:name="com.rdm.anim.RedPacketRainActvity"
             android:label="雪花飘落" >
         </activity>
-
+        <activity
+            android:name="com.rdm.anim.ThrowEggActvity"
+            android:label="砸鸡蛋" >
+        </activity>
+        <activity
+            android:name="com.rdm.anim.RadarActvity"
+            android:label="雷达效果" >
+        </activity>
+        <activity
+            android:name="com.rdm.anim.RotateImageViewActvity"
+            android:label="翻转效果" >
+        </activity>
         <activity
             android:name="com.manuelpeinado.quickreturnheader.demo.ListViewSampleActivity"
             android:label="listVIew浮动View" />
         <activity
             android:name="com.manuelpeinado.quickreturnheader.demo.ScrollViewSampleActivity"
             android:label="ScrollView浮动View" />
+
+        <activity
+            android:label="GalleryDemosActivity"
+            android:name="org.anjoy.gallery.GalleryDemosActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:label="RotateViewTestActivity"
+            android:name="org.anjoy.gallery.RotateViewTestActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="ActivityActivity"
+            android:name="com.cn.ActivityActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="ActivityActivity"
+            android:name="com.rdm.common.ui.demo.view.AbilityDetaileViewDemo" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:screenOrientation="portrait" >
+        </activity>
+
     </application>
 
 </manifest>

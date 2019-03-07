@@ -1,7 +1,10 @@
 package com.rdm.common.ui.demo;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -20,6 +23,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
+import com.nostra13.universalimageloader.cache.memory.impl.LargestLimitedMemoryCache;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.rdm.common.Debug;
+import com.rdm.common.ILog;
+import com.rdm.common.util.SdcardUtils;
+
+import java.io.File;
 import java.util.Map;
 
 
@@ -69,8 +83,40 @@ public class MainActivity extends ActionBarActivity
 
         setTitle(name);
 
+
+        int memoryClass = getMemoryClass(getApplicationContext());
+        long maxMemory = Runtime.getRuntime().maxMemory();
+        ImageLoaderConfiguration.Builder builder = new ImageLoaderConfiguration.Builder(getApplicationContext());
+        builder.denyCacheImageMultipleSizesInMemory();
+        int maxSize = memoryClass * 1024 * 1024 / 10;
+        builder.memoryCache(new LargestLimitedMemoryCache(maxSize));
+
+        File imageCacheDir = new File(SdcardUtils.getSDFile(),"wssdfw");
+
+        builder.discCache(new UnlimitedDiskCache(imageCacheDir));
+        builder.tasksProcessingOrder(QueueProcessingType.LIFO);
+     //   ILog.i(tag, String.format("memory:%d,max:%d,img_load_max:%d", memoryClass, maxMemory, maxSize / (1024 * 1024)));
+
+        DisplayImageOptions.Builder optionsBuilder = new DisplayImageOptions.Builder();
+        optionsBuilder.cacheInMemory(true);
+        optionsBuilder.cacheOnDisc(true);
+
+        BitmapFactory.Options decodingOptions = new BitmapFactory.Options();
+        decodingOptions.inPreferredConfig = Bitmap.Config.RGB_565;
+        optionsBuilder.decodingOptions(decodingOptions);
+        builder.defaultDisplayImageOptions(optionsBuilder.build());
+        if (Debug.isDebug()) {
+            builder.writeDebugLogs();
+        }
+        ImageLoader.getInstance().init(builder.build());
+
     }
 
+    private static int getMemoryClass(Context context) {
+        return ((ActivityManager) context
+                .getSystemService(Context.ACTIVITY_SERVICE))
+                .getMemoryClass();
+    }
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments

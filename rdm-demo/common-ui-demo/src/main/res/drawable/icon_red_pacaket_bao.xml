@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/redpacket000" android:duration="33" />
+    <item android:drawable="@drawable/redpacket001" android:duration="33" />
+    <item android:drawable="@drawable/redpacket002" android:duration="33" />
+    <item android:drawable="@drawable/redpacket003" android:duration="33" />
+    <item android:drawable="@drawable/redpacket004" android:duration="33" />
+    <item android:drawable="@drawable/redpacket005" android:duration="33" />
+    <item android:drawable="@drawable/redpacket006" android:duration="33" />
+    <item android:drawable="@drawable/redpacket007" android:duration="33" />
+    <item android:drawable="@drawable/redpacket008" android:duration="33" />
+    <item android:drawable="@drawable/redpacket008" android:duration="33" />
+    <item android:drawable="@drawable/redpacket010" android:duration="33" />
+    <item android:drawable="@drawable/redpacket011" android:duration="33" />
+    <item android:drawable="@drawable/redpacket012" android:duration="33" />
+    <item android:drawable="@drawable/redpacket013" android:duration="33" />
+    <item android:drawable="@drawable/redpacket014" android:duration="33" />
+    <item android:drawable="@drawable/redpacket015" android:duration="33" />
+    <item android:drawable="@drawable/redpacket016" android:duration="33" />
+    <item android:drawable="@drawable/redpacket017" android:duration="33" />
+    <item android:drawable="@drawable/redpacket018" android:duration="33" />
+    <item android:drawable="@drawable/redpacket019" android:duration="33" />
+    <item android:drawable="@drawable/redpacket020" android:duration="33" />
+    <item android:drawable="@drawable/redpacket021" android:duration="33" />
+    <item android:drawable="@drawable/redpacket022" android:duration="33" />
+    <item android:drawable="@drawable/redpacket023" android:duration="33" />
+    <item android:drawable="@drawable/redpacket024" android:duration="33" />
+    <item android:drawable="@drawable/redpacket025" android:duration="33" />
+    <item android:drawable="@drawable/redpacket026" android:duration="33" />
+    <item android:drawable="@drawable/redpacket027" android:duration="33" />
+<!--    <item android:drawable="@drawable/redpacket028" android:duration="33" />
+    -->
+</animation-list>

@@ -1,15 +1,23 @@
 package com.rdm.common.ui.demo;
 
+import com.cn.ActivityActivity;
 import com.handmark.pulltorefresh.samples.PulltoRefreshDemo;
 import com.manuelpeinado.quickreturnheader.demo.ListViewSampleActivity;
 import com.manuelpeinado.quickreturnheader.demo.ScrollViewSampleActivity;
+import com.rdm.anim.RadarActvity;
+import com.rdm.anim.RedPacketRainActvity;
+import com.rdm.anim.RotateImageViewActvity;
+import com.rdm.anim.ThrowEggActvity;
 import com.rdm.common.ui.demo.activity.JazzViewPagerDemo;
 import com.rdm.common.ui.demo.activity.RoundedImageViewDemo;
 import com.rdm.common.ui.demo.activity.XListViewDemo;
 import com.rdm.common.ui.demo.base.BaseActivityDemo;
 import com.rdm.common.ui.demo.base.TipsViewDemo;
-import com.rdm.anim.SnowDownActvity;
+import com.rdm.common.ui.demo.view.AbilityDetaileViewDemo;
 import com.viewpagerindicator.sample.ViewPageIndicatorDemo;
+
+import org.anjoy.gallery.GalleryDemosActivity;
+import org.anjoy.gallery.RotateViewTestActivity;
 
 import java.util.HashMap;
 
@@ -61,8 +69,22 @@ public class DemoData {
 
             mainList.put("动画效果",demolIst);
 
-            addDemoActivityClss(demolIst,SnowDownActvity.class);
+            addDemoActivityClss(demolIst,RedPacketRainActvity.class);
+            addDemoActivityClss(demolIst,ThrowEggActvity.class);
+            addDemoActivityClss(demolIst,RadarActvity.class);
+            addDemoActivityClss(demolIst,RotateImageViewActvity.class);
 
+            addDemoActivityClss(demolIst,RotateViewTestActivity.class);
+            addDemoActivityClss(demolIst,GalleryDemosActivity.class);
+            addDemoActivityClss(demolIst,ActivityActivity.class);
+
+        }
+
+        {
+            HashMap<String,Object> demolIst = new HashMap<String,Object>();
+
+            mainList.put("自定义View",demolIst);
+            addDemoActivityClss(demolIst, AbilityDetaileViewDemo.class);
 
         }
 
