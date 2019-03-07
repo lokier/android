@@ -4,7 +4,6 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.widget.FrameLayout;
 
 import com.rdm.common.ui.R;
 
@@ -20,14 +19,22 @@ public abstract class SingleFragmentActivity extends BaseActivity {
     @Override
     protected void onCreated(Bundle savedInstanceState) {
         setContentView(R.layout.activity_single_fragment);
-        Fragment fragment = onCreateFragment(savedInstanceState);
 
+
+        Fragment fragment = onCreateFragment(savedInstanceState);
         if(fragment == null){
-            return;
+            fragment = new LoadingFragment();
         }
+
         FragmentManager fm = getFragmentManager();
         FragmentTransaction tran =  fm.beginTransaction();
         tran.add(R.id.main_content,fragment);
         tran.commit();
+
     }
+
+
+
+
+
 }
