@@ -1,6 +1,6 @@
 package com.rdm.common.ui.demo.activity;
 
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import com.rdm.common.ui.demo.R;
 
 
-public class RoundedImageViewDemo extends ActionBarActivity {
+public class RoundedImageViewDemo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

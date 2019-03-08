@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +19,7 @@ import com.rdm.common.ui.view.JazzyViewPager;
 import com.rdm.common.ui.view.OutlineContainer;
 
 
-public class JazzViewPagerDemo extends ActionBarActivity {
+public class JazzViewPagerDemo extends AppCompatActivity {
 
 	private JazzyViewPager mJazzy;
 

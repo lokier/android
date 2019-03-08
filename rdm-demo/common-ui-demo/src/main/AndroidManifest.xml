@@ -389,6 +389,11 @@
             android:name="com.rdm.anim.RotateImageViewActvity"
             android:label="翻转效果" >
         </activity>
+
+        <activity
+            android:name="com.truizlop.sectionedrecyclerviewsample.GridviewGroupActivity"
+            android:label="gridView分组" >
+        </activity>
         <activity
             android:name="com.manuelpeinado.quickreturnheader.demo.ListViewSampleActivity"
             android:label="listVIew浮动View" />

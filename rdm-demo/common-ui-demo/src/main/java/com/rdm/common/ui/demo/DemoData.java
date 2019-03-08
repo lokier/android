@@ -14,6 +14,7 @@ import com.rdm.common.ui.demo.activity.XListViewDemo;
 import com.rdm.common.ui.demo.base.BaseActivityDemo;
 import com.rdm.common.ui.demo.base.TipsViewDemo;
 import com.rdm.common.ui.demo.view.AbilityDetaileViewDemo;
+import com.truizlop.sectionedrecyclerviewsample.GridviewGroupActivity;
 import com.viewpagerindicator.sample.ViewPageIndicatorDemo;
 
 import org.anjoy.gallery.GalleryDemosActivity;
@@ -85,6 +86,8 @@ public class DemoData {
 
             mainList.put("自定义View",demolIst);
             addDemoActivityClss(demolIst, AbilityDetaileViewDemo.class);
+            addDemoActivityClss(demolIst, GridviewGroupActivity.class);
+
 
         }
 
